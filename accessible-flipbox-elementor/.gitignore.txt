@@ -1,0 +1,6 @@
+# WordPress plugin ignores
+/node_modules
+/vendor
+.DS_Store
+Thumbs.db
+*.zip
