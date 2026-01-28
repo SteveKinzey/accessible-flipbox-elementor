@@ -1,0 +1,58 @@
+/* Focus indicator for the flipbox container */
+.elementor-flip-box[tabindex="0"]:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgba(0, 95, 204, 0.2);
+}
+
+.elementor-flip-box[tabindex="0"]:focus-visible {
+    outline: 3px solid #005fcc;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgba(0, 95, 204, 0.25);
+}
+
+/* Flipped state - rotate front away, show back */
+.elementor-flip-box.afe-flipped .elementor-flip-box__front {
+    transform: rotateY(180deg) !important;
+}
+
+.elementor-flip-box.afe-flipped .elementor-flip-box__back {
+    transform: rotateY(0deg) !important;
+}
+
+/* Ensure smooth transition */
+.elementor-flip-box__front,
+.elementor-flip-box__back {
+    transition: transform 0.6s ease;
+}
+
+/* Hide back from interaction when not flipped */
+.elementor-flip-box__back[aria-hidden="true"] {
+    pointer-events: none;
+}
+
+/* Focus styles for interactive elements inside back */
+.elementor-flip-box.afe-flipped .elementor-flip-box__back a:focus,
+.elementor-flip-box.afe-flipped .elementor-flip-box__back button:focus,
+.elementor-flip-box.afe-flipped .elementor-flip-box__back input:focus {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .elementor-flip-box[tabindex="0"]:focus,
+    .elementor-flip-box[tabindex="0"]:focus-visible {
+        outline: 4px solid;
+        outline-offset: 4px;
+        box-shadow: none;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .elementor-flip-box__front,
+    .elementor-flip-box__back {
+        transition-duration: 0.01ms !important;
+    }
+}
