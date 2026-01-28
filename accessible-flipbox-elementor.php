@@ -3,7 +3,7 @@
 Plugin Name: Accessible Flipbox for Elementor
 Plugin URI: https://github.com/SteveKinzey/accessible-flipbox-elementor
 Description: Adds keyboard accessibility to Elementor Flipbox widgets with proper ARIA attributes and keyboard focus handling. Supports multiple flipboxes in containers.
-Version: 1.2.0
+Version: 1.2.1
 Author: Stephen Kinzey, PhD
 Author URI: https://sk-america.com
 License: GPLv2 or later
@@ -12,6 +12,7 @@ Text Domain: accessible-flipbox-elementor
 Domain Path: /languages
 
 Changelog:
+v1.2.1 - Enhanced documentation, added license file, reorganized structure
 v1.2.0 - Fixed multiple flipbox navigation bug
        - Flipbox container is now focusable (not just the front)
        - Tab order no longer breaks when a flipbox is flipped
@@ -25,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'AFE_VERSION', '1.2.0' );
+define( 'AFE_VERSION', '1.2.1' );
 
 function afe_enqueue_scripts() {
     // Only load if Elementor is active

@@ -5,7 +5,7 @@ Tags: elementor, flipbox, accessibility, aria, keyboard navigation
 Requires at least: 5.0
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,10 +44,31 @@ No — works with free Elementor as long as the Flipbox widget is available.
 
 == Changelog ==
 
+= 1.2.1 =
+* Enhanced README documentation with accessibility benefits
+* Added GPL-2.0 license file
+* Reorganized plugin file structure
+
+= 1.2.0 =
+* Fixed multiple flipbox navigation bug
+* Flipbox container is now focusable (not just the front)
+* Tab order no longer breaks when a flipbox is flipped
+* Each flipbox maintains independent state
+* Focus management separated for mouse vs keyboard users
+
+= 1.1.0 =
+* Added ARIA attributes and keyboard support
+
 = 1.0.0 =
 * Initial release with keyboard and ARIA enhancements.
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+Documentation and structure improvements.
+
+= 1.2.0 =
+Critical fix for multiple flipbox navigation.
 
 = 1.0.0 =
 First public release.

@@ -2,7 +2,7 @@
 
 **Make your Elementor Pro Flipbox widgets accessible to everyone.**
 
-[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/SteveKinzey/accessible-flipbox-elementor/releases)
+[![Version](https://img.shields.io/badge/version-1.2.1-blue.svg)](https://github.com/SteveKinzey/accessible-flipbox-elementor/releases)
 [![License](https://img.shields.io/badge/license-GPL--2.0%2B-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 [![WordPress](https://img.shields.io/badge/WordPress-5.0%2B-blue.svg)](https://wordpress.org/)
 
@@ -146,6 +146,12 @@ The plugin injects accessible behaviors into Elementor's Flipbox widget:
 - Works with all major screen readers (NVDA, JAWS, VoiceOver, Narrator)
 
 ## Changelog
+
+### v1.2.1
+
+- Enhanced README documentation with accessibility benefits
+- Added GPL-2.0 license file
+- Reorganized plugin file structure
 
 ### v1.2.0
 
