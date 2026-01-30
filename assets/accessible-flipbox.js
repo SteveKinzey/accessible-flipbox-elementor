@@ -98,7 +98,10 @@
                     // Only let real links/buttons work if on the visible side
                     if ((isFlipped && isOnBack) || (!isFlipped && isOnFront)) {
                         const href = $clickedInteractive.attr('href');
-                        const isRealLink = href && href !== '#' && !href.startsWith('javascript:');
+                        const isRealLink = href && href !== '#' &&
+                            !href.startsWith('javascript:') &&
+                            !href.startsWith('data:') &&
+                            !href.startsWith('vbscript:');
                         const isSubmit = $clickedInteractive.is('button[type="submit"], input[type="submit"]');
                         
                         if (isRealLink || isSubmit) {
