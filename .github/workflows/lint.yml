@@ -1,0 +1,26 @@
+name: Lint JavaScript
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install ESLint
+        run: npm install eslint@8 --save-dev
+      
+      - name: Run ESLint
+        run: npx eslint assets/*.js --no-eslintrc --env browser,jquery,es2021 --parser-options=ecmaVersion:2021
